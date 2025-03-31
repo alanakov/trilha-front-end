@@ -3,12 +3,12 @@ import ListaTarefas from "./ListaTarefas";
 import Saudacao from "./Saudacao";
 import ToggleVisibilidade from "./ToggleVisibilidade";
 
-export default function Trilha1() {
+export default function Trilha2() {
   const tarefasExemplo = ["estudar React", "estudar TS"];
 
   return (
     <div style={{ width: "100%" }}>
-      <h1>Trilha 1: Fundamentos e Exercícios</h1>
+      <h1>Trilha 2: Fundamentos e Exercícios</h1>
       <Contador valorInicial={5} />
       <Saudacao nomeInicial="teste" />
       <ListaTarefas tarefasIniciais={tarefasExemplo} />
