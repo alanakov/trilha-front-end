@@ -4,7 +4,7 @@ interface SaudacaoProps {
   nomeInicial?: string;
 }
 
-export default function Saudacao({ nomeInicial = "Visitante" }: SaudacaoProps) {
+export default function Saudacao({ nomeInicial }: SaudacaoProps) {
   const [nome, setNome] = useState(nomeInicial);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {

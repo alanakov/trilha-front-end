@@ -4,9 +4,7 @@ interface ToggleVisibilidadeProps {
   texto?: string;
 }
 
-export default function ToggleVisibilidade({
-  texto = "Conteúdo secreto!",
-}: ToggleVisibilidadeProps) {
+export default function ToggleVisibilidade({ texto }: ToggleVisibilidadeProps) {
   const [visivel, setVisivel] = useState(false);
 
   const toggle = () => setVisivel(!visivel);
