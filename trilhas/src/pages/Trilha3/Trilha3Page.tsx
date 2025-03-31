@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Trilha3Page() {
+export default function Trilha3Page() {
   return (
     <div>
       <h1>Trilha 3 - Menu de Exercícios de Roteamento</h1>
@@ -42,5 +42,3 @@ function Trilha3Page() {
     </div>
   );
 }
-
-export default Trilha3Page;

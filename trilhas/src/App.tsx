@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import Trilha2Page from "./pages/Trilha2/Trilha2Page"; // Página container da Trilha 2
-import Trilha3Page from "./pages/Trilha3/Trilha3Page"; // Página de menu da Trilha 3
+import Trilha2Page from "./pages/Trilha2/Trilha2Page";
+import Trilha3Page from "./pages/Trilha3/Trilha3Page";
 
 import Home from "./pages/Trilha3/Navegação/Home";
 import About from "./pages/Trilha3/Navegação/About";
@@ -11,7 +11,7 @@ import Rooms from "./pages/Trilha3/ReservasDeHotel/Rooms";
 import RoomDetails from "./pages/Trilha3/ReservasDeHotel/RoomDetails";
 import BookingSuccess from "./pages/Trilha3/ReservasDeHotel/BookingSuccess";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <div className="container">
@@ -75,5 +75,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
