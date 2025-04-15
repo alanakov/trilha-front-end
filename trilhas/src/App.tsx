@@ -10,6 +10,8 @@ import Animal from "./pages/Trilha3/Animal";
 import Rooms from "./pages/Trilha3/ReservasDeHotel/Rooms";
 import RoomDetails from "./pages/Trilha3/ReservasDeHotel/RoomDetails";
 import BookingSuccess from "./pages/Trilha3/ReservasDeHotel/BookingSuccess";
+import Trilha4Page from "./pages/Trilha4/Trilha4Page";
+import Trilha1Page from "./pages/Trilha1/Trilha1Page";
 
 export default function App() {
   return (
@@ -21,16 +23,24 @@ export default function App() {
               <Link to="/">Início App</Link>
             </li>
             <li>
+              <Link to="/trilha1">Trilha 1</Link>
+            </li>
+            <li>
               <Link to="/trilha2">Trilha 2</Link>
             </li>
             <li>
               <Link to="/trilha3">Trilha 3</Link>
+            </li>
+            <li>
+              <Link to="/trilha4">Trilha 4</Link>
             </li>
           </ul>
         </nav>
 
         <main className="content">
           <Routes>
+            <Route path="/trilha1" element={<Trilha1Page />} />
+
             <Route path="/trilha2" element={<Trilha2Page />} />
 
             <Route path="/trilha3" element={<Trilha3Page />} />
@@ -50,6 +60,8 @@ export default function App() {
               path="/trilha3/reservas/booking-success"
               element={<BookingSuccess />}
             />
+
+            <Route path="/trilha4/" element={<Trilha4Page />} />
 
             <Route
               path="/"
